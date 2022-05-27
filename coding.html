@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            padding: 1%;
+        }
+
+    </style>
+
+</head>
+
+<body>  
+    <div id="container" class="container">
+        <span id="replace">A. I am an Engineer</span>
+        <br>
+        <span id="append">K. This is Web Technology</span>
+        <br>
+        <span id="">6. I got 10 CGPA</span>
+    </div>
+    <div id="btnContainer" class="btnContainer">
+        <button onclick="passFunc(this.innerHTML)">Replace</button>
+        <button onclick="passFunc(this.innerHTML)">Append</button>
+        <button onclick="passFunc(this.innerHTML)">Insert Before</button>
+        <button onclick="passFunc(this.innerHTML)">Remove</button>
+    </div>
+
+    <script>
+        funcList = {
+            "Replace": replace,
+            "Append": append,
+            "Insert Before": insertBef,
+            "Remove": remove,
+        };
+
+        function passFunc(arg) {
+            console.log(arg);
+            funcList[arg]();
+        }
+
+        function replace () {
+            const string = "I am a BE Student";
+            replaceKey = document.getElementById('replace');
+            replaceKey.innerHTML = "";
+            replaceKey.innerHTML = string;
+        }
+        function append () {
+            const str = "Advance Web Technology";
+            appendKey = document.getElementById('container');
+            placeholder = appendKey.innerHTML;
+            appendKey.innerHTML = `<li>${str}</li>`;
+            appendKey.innerHTML += `${placeholder}`;
+        }
+        function insertBef () {
+            const string = "Discrete Structure";
+            insertKey = document.getElementById('replace');
+            insertKey.innerHTML += `<li id="delete">${string}</li>`
+        }
+        function remove () {
+            deleteKey = document.getElementById('delete');
+            deleteKey.remove();
+        }
+
+    </script>
+</body>
+
+</html>

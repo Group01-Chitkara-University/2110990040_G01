@@ -1,0 +1,62 @@
+body {
+    /* background: fuchsia; */
+     background: url('../booking2.JPG') no-repeat center/cover;
+}
+
+
+h1{
+    font-size: 44p;
+    color: rgb(0, 0, 0);
+    font-family: lucida handwriting;
+}
+input{
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    text-indent: 5px;
+}
+input:focus{
+    outline:none ;
+}
+fieldset{
+    width: 40%;
+    height: 629px;
+    /* background-color: darkseagreen; */
+    background-image: linear-gradient(to right,rgb(167, 48, 48) rgba(255,0,0,0) , rgba(255,0,0,1));
+    border-radius: 5px;
+    outline: solid;
+}
+
+table{
+    font-size: 22px;
+}
+td{
+    line-height: 50px;
+
+}
+input[type="submit"]{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(156, 30, 30);
+    font-size: 25px;
+    font-family: lucida handwriting;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(238, 164, 130);
+}
+input[type="reset"]{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(156, 30, 30);
+    font-size: 25px;
+    font-family: lucida handwriting;
+}
+
+input[type="reset"]:hover{
+    background-color: rgb(238, 164, 130);
+}
+
+div{
+    margin-top: 40px;
+}

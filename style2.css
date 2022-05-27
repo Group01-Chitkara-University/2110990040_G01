@@ -1,0 +1,30 @@
+h2{
+    text-align:center;
+
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+    
+  }
+  body{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    /* border-radius: 22px; */
+    text-decoration: none;
+    /* text-shadow: 2px 2px rgb(160, 87, 148); */
+}
+
+body{
+    /* content: ""; */
+    background-color: rgb(2, 12, 22);
+    /* position: absolute; */
+    height: 100%;
+    width: 95%;
+    z-index: -1;
+    opacity:0.6;
+}
+h1{
+    text-align: center;
+}
